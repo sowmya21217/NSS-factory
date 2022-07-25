@@ -1,0 +1,68 @@
+@import 'colors';
+
+%align-center {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.navbar {
+  background-color: $grey;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  z-index: 10;
+  position: relative;
+
+  &__logo {
+    color: $black;
+    font-size: 2.7rem ;
+    margin-left: 0px;
+    text-decoration: none;
+    background-color: antiquewhite;
+  }
+    
+  &__bars {
+    opacity: 0;
+  
+  }
+  &__menu1 {
+     padding: 10px;
+      text-align: center;
+      
+  }
+  &__search {
+    color: $black;
+    & i {
+      text-decoration: none;
+      color: $black;
+    }
+  }
+
+  &__menu {
+    @extend  %align-center;
+    margin-right: 450px;
+    list-style: none;
+    &--links {
+      color: $black;
+      @extend %align-center;
+      justify-content: center;
+      padding-right: 28px ;
+      
+
+      &:hover {
+        color: $black;
+        transition: all 0.3s ease;
+
+      }
+    }
+
+    &--links1 {
+      color: $black;
+      @extend %align-center;
+      text-align-last: center;
+      text-decoration: underline;    
+    }
+  }  
+}

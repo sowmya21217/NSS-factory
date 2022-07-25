@@ -1,0 +1,32 @@
+@import 'colors';
+
+.hero {
+    text-align: center;
+    background-image: url("bozza1.png");
+    color: $white1;
+  
+    & h5 {
+      font-size: 15px;
+    }
+    & h2 {
+       font-size: 60px;
+    }
+    & h6 {
+       font-size: 10px;
+    }
+  
+    & button {
+      border-color: $white;
+      padding: 10px 35px;
+      text-align: center;
+      cursor: pointer;
+      box-shadow: 20px;
+      background: none;
+    }
+  
+    & a {
+      text-decoration: none;
+      color: $white;
+    }
+  }
+  

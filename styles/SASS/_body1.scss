@@ -1,0 +1,40 @@
+@import 'colors';
+
+.leftbody1 {
+    height : 250px;
+    width: 700px;
+
+    & h3 {
+     color: $black;
+     padding:16px; 
+     font-size: 90px;  
+    }
+
+    & p {
+        font-size: 20px;
+        color: $grey;
+        margin-left: 20px;
+        line-height: 30px;
+        flex-basis: 40%;
+    }
+
+    @include mobile {
+        grid-template-columns: 1fr;
+        width:100px;
+      }
+  
+
+}
+
+.rightbody1 {
+    margin-left: 700px;
+    padding-left:10px;
+    
+    
+    & p {
+     font-size: 20px;
+     line-height: 30px;
+     flex-basis: 40%;
+     color: $grey;
+    }
+}

@@ -1,0 +1,29 @@
+.footer {
+  display: -webkit-flex;
+  display: flex;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: $grey;
+  color: $white;
+  text-align: center;
+  padding: 30px;
+  &__1 {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding: 7px;
+    height: 200px;
+  }
+  &--link {
+      text-decoration: none;
+      color: $white;    
+    }
+  @media (max-width: 600px) {
+      .footer {
+         -webkit-flex-direction: 1;
+         flex-direction: 1;
+        }
+    }
+}
+
